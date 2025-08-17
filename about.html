@@ -14,8 +14,8 @@
   <header>
     <nav class="navbar" aria-label="Main Navigation">
       <div class="logo">Kili-Arava</div>
-      <button class="menu-toggle" aria-label="Toggle Menu">☰</button>
-      <div class="nav-wrapper">
+      <button class="menu-toggle" aria-label="Toggle Menu" onclick="toggleMenu()">☰</button>
+      <div class="nav-wrapper" id="navWrapper">
         <ul class="nav-links">
           <li><a href="index.html">Home</a></li>
           <li><a href="about.html" class="active">About Us</a></li>
@@ -119,5 +119,10 @@
       <p>&copy; 2025 Kili-Arava. All rights reserved.</p>
     </div>
   </footer>
+<script>
+    function toggleMenu() {
+      document.getElementById('navWrapper').classList.toggle('show');
+    }
+  </script>
 </body>
 </html>
