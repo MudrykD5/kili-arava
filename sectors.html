@@ -12,13 +12,14 @@
   <header>
     <nav class="navbar">
       <div class="logo">Kili-Arava</div>
-      <button class="menu-toggle">☰</button>
+      <button class="menu-toggle" aria-label="Toggle Menu" onclick="toggleMenu()">☰</button>
+      <div class="nav-wrapper" id="navWrapper">
       <ul class="nav-links">
         <li><a href="index.html">Home</a></li>
         <li><a href="about.html">About Us</a></li>
         <li><a href="sectors.html" class="active">Our Sectors</a></li>
         <li><a href="impact.html">Impact</a></li>
-        <li><a href="contact.html">Contact</a></li>
+        <li><a href="contact.html" >Contact</a></li>
       </ul>
     </nav>
   </header>
@@ -34,7 +35,8 @@
       <div class="sector-text">
         <h2>Microfinance</h2>
         <p>Providing entrepreneurs with accessible capital to start and grow businesses.  
-        
+        <strong>Image style:</strong> Real Tanzanian market scenes, people at work.  
+        <strong>Color tones:</strong> Navy suits, gold signage, teal accents on stalls.</p>
       </div>
     </div>
 
@@ -43,7 +45,8 @@
       <div class="sector-text">
         <h2>Mining</h2>
         <p>Unlocking mineral potential through sustainable and ethical extraction.  
-        
+        <strong>Image style:</strong> On-site mining operations, machinery close-ups.  
+        <strong>Color tones:</strong> Earthy browns, gold highlights, navy machinery parts.</p>
       </div>
     </div>
 
@@ -52,7 +55,8 @@
       <div class="sector-text">
         <h2>Agriculture</h2>
         <p>Modern farming techniques that ensure food security and rural prosperity.  
-        
+        <strong>Image style:</strong> Golden sunlight on crops, farmers using tech tools.  
+        <strong>Color tones:</strong> Lush greens, warm golds, subtle navy overlays.</p>
       </div>
     </div>
 
@@ -61,7 +65,8 @@
       <div class="sector-text">
         <h2>Trading</h2>
         <p>Connecting local producers to global markets efficiently.  
-        
+        <strong>Image style:</strong> Busy port, shipping containers, business handshake.  
+        <strong>Color tones:</strong> Teal cranes, navy containers, gold branding.</p>
       </div>
     </div>
 
@@ -70,7 +75,8 @@
       <div class="sector-text">
         <h2>Technology</h2>
         <p>Driving digital transformation through innovative tech solutions.  
-        
+        <strong>Image style:</strong> Abstract digital networks, server rooms, startups.  
+        <strong>Color tones:</strong> Teal highlights, deep navy backgrounds, gold UI elements.</p>
       </div>
     </div>
   </section>
@@ -123,7 +129,11 @@
     </div>
   </footer>
 
-  <script src="script.js"></script>
+  <script>
+    function toggleMenu() {
+      document.getElementById('navWrapper').classList.toggle('show');
+    }
+  </script>
 </body>
 </html>
 
